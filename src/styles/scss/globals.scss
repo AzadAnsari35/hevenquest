@@ -1,0 +1,74 @@
+@import "../css/style.css";
+
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.scroll-to-top-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1050;
+  width: 60px;
+  height: 60px;
+}
+
+.scroll-to-top-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border: 2px dotted #2563eb;
+  border-radius: 50%;
+  animation: rotateBorder 2s linear infinite;
+}
+
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.scroll-to-top-btn {
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+}
+
+.dotted-border {
+  width: var(--btn-size, 60px);
+  height: var(--btn-size, 60px);
+}
+
+.custom-swiper .swiper-pagination {
+  display: none !important;
+}
+
+.navbars.scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-sticky {
+  position: sticky;
+  top: 0;
+}
