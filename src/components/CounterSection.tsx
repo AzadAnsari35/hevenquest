@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import AnimatedCounter from "./AnimateCounter";
 
 export const CounterSection: React.FC  = () => {
   return (
@@ -16,8 +17,8 @@ export const CounterSection: React.FC  = () => {
                   src="/img/counter/counter-style1-thumb.jpg"
                   alt="counter-style1"
                   className="w-100"
-                  width={50}
-                  height={300}
+                  width={20}
+                  height={50}
                 />
               </div>
               <div className="counter-states">
@@ -65,7 +66,8 @@ export const CounterSection: React.FC  = () => {
 
                   <h2 className="counter-number">
                     <span className="d-block odometer" data-count="1000">
-                      0
+                      {/* 0 */}
+                      <AnimatedCounter target={1000} />
                     </span>
                     <em>+</em>
                   </h2>
@@ -102,7 +104,8 @@ export const CounterSection: React.FC  = () => {
                   </svg>
                   <h2 className="counter-number">
                     <span className="d-block odometer" data-count="200">
-                      0
+                    <AnimatedCounter target={200} />
+                      {/* 0 */}
                     </span>
                     <em>+</em>
                   </h2>
@@ -123,7 +126,8 @@ export const CounterSection: React.FC  = () => {
                   </svg>
                   <h2 className="counter-number">
                     <span className="d-block odometer" data-count="5">
-                      0
+                    <AnimatedCounter target={5} />
+                      {/* 0 */}
                     </span>
                     <em>+</em>
                   </h2>
@@ -148,7 +152,8 @@ export const CounterSection: React.FC  = () => {
                   </svg>
                   <h2 className="counter-number">
                     <span className="d-block odometer" data-count="10">
-                      0
+                    <AnimatedCounter target={10} />
+                      {/* 0 */}
                     </span>
                     <em>+</em>
                   </h2>

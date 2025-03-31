@@ -1,3 +1,4 @@
+import { MotionStyle } from "framer-motion";
 import { IconType } from "react-icons";
 
 export interface SocialLink {
@@ -19,9 +20,9 @@ export interface TopDestinations {
 }
 
 export interface DestinationGallery {
-  id: number;
-  img: string;
-  title: string;
+  id?: number;
+  img?: string;
+  title?: string;
 }
 
 export interface Gallery {
@@ -47,4 +48,12 @@ export type UsefulLinks = LinkItem[][];
 export interface AppleIcon{
   id: number;
   dimension: string;
+}
+
+export interface ScrollAnimateProps {
+  children: React.ReactNode;
+  direction?: 'up' | 'down' | 'left' | 'right';
+  delay?: number;
+  bounce?: number;
+  styles?: MotionStyle | undefined
 }

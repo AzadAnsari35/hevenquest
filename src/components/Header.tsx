@@ -1,13 +1,20 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
 import { SocialLink } from "@/interface";
 import { menuItems, socialLinks } from "@/model";
+import { PopupSearch } from "./PopupSearch";
 
 export const Header: React.FC = () => {
+  const [showSearch, setShowSearch] = useState(false);
+
+  const toggleSearch = () => setShowSearch(!showSearch);
   return (
+    <>
+    <PopupSearch toggle={toggleSearch} show={showSearch} />
     <header className="vs-header layout1">
       <div className="sticky-wrapper position-relative">
         <div className="header-top-wrap">
@@ -121,7 +128,7 @@ export const Header: React.FC = () => {
                   />
                 </Link>
                 <div className="d-flex align-items-center gap-3">
-                  <button className="wc-link2 searchBoxTggler d-lg-none">
+                  <button className="wc-link2 searchBoxTggler d-lg-none" onClick={toggleSearch}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="21"
@@ -152,7 +159,7 @@ export const Header: React.FC = () => {
                 </ul>
               </nav>
               <div className="header-wc style2">
-                <button className="wc-link2 searchBoxTggler">
+                <button className="wc-link2 searchBoxTggler" onClick={toggleSearch}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="21"
@@ -197,5 +204,6 @@ export const Header: React.FC = () => {
         </div>
       </div>
     </header>
+    </>
   );
 };

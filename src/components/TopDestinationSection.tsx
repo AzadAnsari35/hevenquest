@@ -3,8 +3,9 @@ import Image from "next/image";
 import { FaLocationDot } from "react-icons/fa6";
 import { topDestinations } from "@/model";
 import Link from "next/link";
+import ScrollAnimate from "./ScrollAnimate";
 
-export const TopDestinationSection: React.FC  = () => {
+export const TopDestinationSection: React.FC = () => {
   return (
     <section
       className="vs-destination-style1 bg-third-theme-12 overflow-hidden space"
@@ -28,10 +29,16 @@ export const TopDestinationSection: React.FC  = () => {
         <div className="row">
           <div className="col-lg-auto mx-auto">
             <div className="title-area text-center">
-              <span className="sec-subtitle fade-anim" data-direction="top">
-                Top Destinations
-              </span>
-              <h2 className="sec-title move-anim">Discover Top Destinations</h2>
+              <ScrollAnimate>
+                <span className="sec-subtitle fade-anim" data-direction="top">
+                  Top Destinations
+                </span>
+              </ScrollAnimate>
+              <ScrollAnimate>
+                <h2 className="sec-title move-anim">
+                  Discover Top Destinations
+                </h2>
+              </ScrollAnimate>
             </div>
           </div>
         </div>
@@ -70,9 +77,11 @@ export const TopDestinationSection: React.FC  = () => {
               ))}
             </div>
             <div className="text-center mt-50 btn-trigger btn-bounce">
-              <a href="destinations.html" className="vs-btn style4">
+            <ScrollAnimate direction="down" bounce={0.5}>
+              <Link href="destinations.html" className="vs-btn style4">
                 <span>view more</span>
-              </a>
+              </Link>
+            </ScrollAnimate>
             </div>
           </div>
         </div>

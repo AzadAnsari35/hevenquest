@@ -6,6 +6,7 @@ import React from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { GiRotaryPhone } from "react-icons/gi";
 import { FaAnglesRight } from "react-icons/fa6";
+import ScrollAnimate from "./ScrollAnimate";
 
 export const Footer: React.FC = () => {
   return (
@@ -17,54 +18,58 @@ export const Footer: React.FC = () => {
         <div className="container">
           <div className="row gx-4">
             <div className="col-12">
-              <div
-                className="footer-cta bg-third-theme-color fade-anim"
-                style={{
-                  backgroundImage: "url('/img/footer/footer-cta-bg.png')",
-                }}
-              >
-                <div className="row g-4 align-items-center">
-                  <div className="col-lg-8">
-                    <div className="cta-contact-items">
-                      <div className="contact-item">
-                        <span className="icon">
-                          <CiLocationOn />
-                        </span>
-                        <div className="info">
-                          <h5 className="info-title text-white-color">
-                            Location
-                          </h5>
-                          <p>
-                            KH number 262, Saidulajab, Western marg, New Delhi
-                            110030 Near Champa Kali
-                          </p>
+              <ScrollAnimate direction="up">
+                <div
+                  className="footer-cta bg-third-theme-color fade-anim"
+                  style={{
+                    backgroundImage: "url('/img/footer/footer-cta-bg.png')",
+                  }}
+                >
+                  <div className="row g-4 align-items-center">
+                    <div className="col-lg-8">
+                      <div className="cta-contact-items">
+                        <div className="contact-item">
+                          <span className="icon">
+                            <CiLocationOn />
+                          </span>
+                          <div className="info">
+                            <h5 className="info-title text-white-color">
+                              Location
+                            </h5>
+                            <p>
+                              KH number 262, Saidulajab, Western marg, New Delhi
+                              110030 Near Champa Kali
+                            </p>
+                          </div>
                         </div>
-                      </div>
-                      <div className="contact-item">
-                        <span className="icon">
-                          <GiRotaryPhone />
-                        </span>
-                        <div className="info">
-                          <h5 className="info-title text-white-color">
-                            Contact Us
-                          </h5>
-                          <p>
-                            <a href="mailto:info@hevenquest.com">
-                              info@hevenquest.com
-                            </a>
-                            <a href="#">01123107538, 8447180219</a>
-                          </p>
+                        <div className="contact-item">
+                          <span className="icon">
+                            <GiRotaryPhone />
+                          </span>
+                          <div className="info">
+                            <h5 className="info-title text-white-color">
+                              Contact Us
+                            </h5>
+                            <p>
+                              <a href="mailto:info@hevenquest.com">
+                                info@hevenquest.com
+                              </a>
+                              <a href="#">01123107538, 8447180219</a>
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="col-lg-4 d-flex justify-content-center justify-content-lg-end btn-trigger btn-bounce">
-                    <a href="contact.html" className="vs-btn style6">
-                      <span>booking now</span>
-                    </a>
+                    <div className="col-lg-4 d-flex justify-content-center justify-content-lg-end btn-trigger btn-bounce">
+                      <ScrollAnimate direction="down" delay={1} bounce={0.5}>
+                        <a href="contact.html" className="vs-btn style6">
+                          <span>booking now</span>
+                        </a>
+                      </ScrollAnimate>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </ScrollAnimate>
             </div>
           </div>
         </div>

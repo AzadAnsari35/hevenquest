@@ -1,9 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import ScrollAnimate from "./ScrollAnimate";
 
-export const CTAAreaSection: React.FC  = () => {
+export const CTAAreaSection: React.FC = () => {
   return (
-    <section className="vs-cta space" style={{backgroundImage: "url('/img/bg/cta-bg.png')" }}>
+    <section
+      className="vs-cta space"
+      style={{ backgroundImage: "url('/img/bg/cta-bg.png')" }}
+    >
       <Image
         src="/img/icons/cloud.png"
         alt="cta-icon"
@@ -26,20 +30,24 @@ export const CTAAreaSection: React.FC  = () => {
                 className="sec-subtitle text-capitalize fade-anim"
                 data-direction="top"
               >
-                Find your tour
+                <ScrollAnimate direction="up">Find your tour</ScrollAnimate>
               </span>
               <h2
                 className="sec-title text-white fade-anim"
                 data-direction="bottom"
               >
-                Have a dream destination in mind?
-                <br className="d-none d-md-block" />
-                Let Us Take You There!
+                <ScrollAnimate direction="down">
+                  Have a dream destination in mind?
+                  <br className="d-none d-md-block" />
+                  Let Us Take You There!
+                </ScrollAnimate>
               </h2>
               <div className="btn-bounce btn-trigger">
-                <a href="trips.html" className="vs-btn style8 mt-5">
-                  discover more
-                </a>
+                <ScrollAnimate direction="down" bounce={0.5}>
+                  <a href="trips.html" className="vs-btn style8 mt-5">
+                    discover more
+                  </a>
+                </ScrollAnimate>
               </div>
             </div>
           </div>

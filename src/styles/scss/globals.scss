@@ -1,9 +1,17 @@
 @import "../css/style.css";
 
-body {
-  font-family: sans-serif;
-  background-color: #f5f5f5;
+@font-face {
+  font-family: 'Rubik'; /* Choose a name for your font */
+  src: url('/fonts/Rubik-Regular.ttf') format('truetype'); /* Path to your font file */
+  font-weight: normal; /* Define font weight (normal, bold, etc.) */
+  font-style: normal; /* Define font style (normal, italic, etc.) */
+  font-display: swap; /* Important for performance */
 }
+
+// body {
+//   font-family: sans-serif;
+//   background-color: #f5f5f5;
+// }
 
 a {
   text-decoration: none !important;
@@ -54,8 +62,8 @@ a {
 }
 
 .dotted-border {
-  width: var(--btn-size, 60px);
-  height: var(--btn-size, 60px);
+  width: var(--btn-size, 50px);
+  height: var(--btn-size, 50px);
 }
 
 .custom-swiper .swiper-pagination {
@@ -71,4 +79,39 @@ a {
 .header-sticky {
   position: sticky;
   top: 0;
+}
+
+.rotating-dotted-border {
+  width: var(--btn-size, 60px);
+  height: var(--btn-size, 60px);
+  border: 2px dashed var(--theme-color);
+  border-radius: 50%;
+  animation: spin 13s infinite linear;
+  margin: 50px auto;
+}
+
+/* Rotation keyframes */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fullScreenModalContainer .modal-dialog .modal-content{
+  background-color: transparent;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.eye:hover{
+  color: rgba(var(--theme-color-rgb), 0.8) !important;
 }

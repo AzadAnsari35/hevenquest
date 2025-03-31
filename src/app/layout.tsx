@@ -5,7 +5,7 @@ import "../styles/scss/globals.scss";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ScrollToTop from "@/components/ScrollButton";
+import { ScrollToTop } from "@/components/ScrollButton";
 import { appleIcon } from "@/model";
 import { StickyNavbar } from "@/components/StickyNavbar";
 
@@ -29,6 +29,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <head>
@@ -63,12 +64,13 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <main className="main">
-          <StickyNavbar />
-          {/* <Header /> */}
+          {/* <StickyNavbar /> */}
+          <Header />
           {children}
           <Footer />
         </main>
         <ScrollToTop />
+        <ScrollToTop showDots />
       </body>
     </html>
   );

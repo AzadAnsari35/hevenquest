@@ -3,6 +3,7 @@ import { TiSocialFacebook } from "react-icons/ti";
 import { FaLinkedinIn } from "react-icons/fa";
 import {
   AppleIcon,
+  DestinationGallery,
   Gallery,
   MenuItem,
   SocialLink,
@@ -66,13 +67,12 @@ export const topDestinations: TopDestinations[] = [
 ];
 
 // Destinations gallery data
-export const gallery: Gallery = {
-  big: {
-    id: 1,
-    img: "/img/destination-galler/destination-gallery-1-1.jpg",
-    title: "Destination Gallery-1",
-  },
-  small: [
+export const gallery: DestinationGallery[] =  [
+    {
+      id: 1,
+      img: "/img/destination-galler/destination-gallery-1-1.jpg",
+      title: "Destination Gallery-1",
+    },
     {
       id: 1,
       img: "/img/destination-galler/destination-gallery-1-2.png",
@@ -93,8 +93,7 @@ export const gallery: Gallery = {
       img: "/img/destination-galler/destination-gallery-1-5.png",
       title: "Destination Gallery-1",
     },
-  ],
-};
+  ];
 
 // Testimonials gallery data
 export const testimonials: Testimonials[] = [
