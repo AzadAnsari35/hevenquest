@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import AnimatedCounter from "./AnimateCounter";
 
-export const CounterSection: React.FC  = () => {
+export const CounterSection: React.FC = () => {
   return (
     <section className="vs-counter1">
       <div className="container">
@@ -10,7 +10,9 @@ export const CounterSection: React.FC  = () => {
           <div className="col-12">
             <div
               className="counter-style1"
-              data-bg-src="/img/bg/counter-style1-bg.png"
+              style={{
+                backgroundImage: `url(/img/bg/counter-style1-bg.png)`,
+              }}
             >
               <div className="counter-thumb">
                 <Image
@@ -104,7 +106,7 @@ export const CounterSection: React.FC  = () => {
                   </svg>
                   <h2 className="counter-number">
                     <span className="d-block odometer" data-count="200">
-                    <AnimatedCounter target={200} />
+                      <AnimatedCounter target={200} />
                       {/* 0 */}
                     </span>
                     <em>+</em>
@@ -126,7 +128,7 @@ export const CounterSection: React.FC  = () => {
                   </svg>
                   <h2 className="counter-number">
                     <span className="d-block odometer" data-count="5">
-                    <AnimatedCounter target={5} />
+                      <AnimatedCounter target={5} />
                       {/* 0 */}
                     </span>
                     <em>+</em>
@@ -152,7 +154,7 @@ export const CounterSection: React.FC  = () => {
                   </svg>
                   <h2 className="counter-number">
                     <span className="d-block odometer" data-count="10">
-                    <AnimatedCounter target={10} />
+                      <AnimatedCounter target={10} />
                       {/* 0 */}
                     </span>
                     <em>+</em>

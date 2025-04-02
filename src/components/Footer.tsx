@@ -54,7 +54,7 @@ export const Footer: React.FC = () => {
                               <a href="mailto:info@hevenquest.com">
                                 info@hevenquest.com
                               </a>
-                              <a href="#">01123107538, 8447180219</a>
+                              <a href="#">01141543739, 9717863939</a>
                             </p>
                           </div>
                         </div>
@@ -161,13 +161,13 @@ export const Footer: React.FC = () => {
               <div className="footer-menu">
                 <ul className="custom-ul justify-content-center justify-content-md-end">
                   <li>
-                    <a href="about.html">About Us</a>
+                    <a href="about">About Us</a>
                   </li>
                   <li>
-                    <a href="faq.html">Faq’s</a>
+                    <a href="faq">Faq’s</a>
                   </li>
                   <li>
-                    <a href="destinations.html">Destination</a>
+                    <a href="destinations">Destination</a>
                   </li>
                 </ul>
               </div>

@@ -5194,6 +5194,8 @@ html.lenis body {
 .vs-breadcrumb {
   padding: 168px 0 180px;
   position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 .vs-breadcrumb::before {
@@ -9805,8 +9807,8 @@ html.lenis body {
 
 /*------------------- 4.26 CTA  -------------------*/
 .vs-cta {
-  mask: url(/img/bg/cta-bg-top-shape.png),
-    url(/img/bg/cta-bg-bottom-shape.png), linear-gradient(#000 0 0);
+  mask: url(/img/bg/cta-bg-top-shape.png), url(/img/bg/cta-bg-bottom-shape.png),
+    linear-gradient(#000 0 0);
   mask-composite: exclude, exclude;
   mask-position: center top, center bottom;
   mask-repeat: no-repeat;
@@ -10673,12 +10675,12 @@ html.lenis body {
 
 .space,
 .space-top {
-  padding-top: var(--section-space);
+  padding-top: var(--section-space) !important;
 }
 
 .space,
 .space-bottom {
-  padding-bottom: var(--section-space);
+  padding-bottom: var(--section-space) !important;
 }
 
 .space-extra,
@@ -11115,14 +11117,14 @@ hr {
 
 .btn-primary {
   background-color: var(--theme-color) !important;
-  border-color: var(--theme-color) !important;;
+  border-color: var(--theme-color) !important;
   padding-top: 7px;
   padding-bottom: 7px;
 }
 
 .btn-primary:hover {
   background-color: var(--second-theme-color) !important;
-  border-color: var(--second-theme-color) !important;;
+  border-color: var(--second-theme-color) !important;
 }
 
 .btn-outline-secondary {
@@ -11342,4 +11344,17 @@ hr {
 
 .destination-box-2 .destination-thumb img {
   height: 345px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.text-primary {
+  color: var(--theme-color) !important;
+}
+.submit-btn {
+  padding-top: 19px !important;
+  padding-bottom: 19px !important;
+  border-radius: 50px;
 }

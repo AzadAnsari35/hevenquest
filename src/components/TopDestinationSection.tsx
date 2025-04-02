@@ -9,7 +9,9 @@ export const TopDestinationSection: React.FC = () => {
   return (
     <section
       className="vs-destination-style1 bg-third-theme-12 overflow-hidden space"
-      data-bg-src="/img/bg/destination.png"
+      style={{
+        backgroundImage: `url(/img/bg/destination.png)`,
+      }}
     >
       <Image
         className="des-icon-1 animate-parachute"
@@ -77,11 +79,11 @@ export const TopDestinationSection: React.FC = () => {
               ))}
             </div>
             <div className="text-center mt-50 btn-trigger btn-bounce">
-            <ScrollAnimate direction="down" bounce={0.5}>
-              <Link href="destinations.html" className="vs-btn style4">
-                <span>view more</span>
-              </Link>
-            </ScrollAnimate>
+              <ScrollAnimate direction="down" bounce={0.5}>
+                <Link href="destinations.html" className="vs-btn style4">
+                  <span>view more</span>
+                </Link>
+              </ScrollAnimate>
             </div>
           </div>
         </div>

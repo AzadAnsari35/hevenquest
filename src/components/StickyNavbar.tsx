@@ -1,11 +1,44 @@
-import { menuItems } from "@/model";
-import Image from "next/image";
+"use client";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import Link from "next/link";
-import React from "react";
+import Image from "next/image";
+import { menuItems } from "@/model";
 
-export const StickyNavbar = () => {
+// Define the transition for the navbar animations
+const navbarVariants = {
+  hidden: { opacity: 0, y: -100 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+};
+
+const StickyNavbar = () => {
+  const [isVisible, setIsVisible] = useState(false); // State to manage visibility
+
+  // Check scroll position to toggle visibility
+  const handleScroll = () => {
+    if (window.scrollY > 200) {
+      setIsVisible(true); // Show navbar when scrolled more than 200px
+    } else {
+      setIsVisible(false); // Hide navbar before scrolling 200px
+    }
+  };
+
+  // Add scroll event listener on component mount
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div id="navbars" className="header-sticky navbars">
+    <motion.div
+      id="navbars"
+      className={`header-sticky navbars ${isVisible ? "visible" : "hidden"}`}
+      variants={navbarVariants}
+      initial="hidden"
+      animate={isVisible ? "visible" : "hidden"}
+    >
       <div className="container custom-container">
         <div className="row justify-content-between align-items-center">
           <div className="col-auto col-lg-2">
@@ -15,11 +48,11 @@ export const StickyNavbar = () => {
             <div className="logo d-none d-lg-block">
               <Link href="/">
                 <Image
-                  src="/img/logo.svg"
-                  alt="Carmax"
-                  className="logo"
                   width={0}
                   height={0}
+                  src="img/logo.svg"
+                  alt="logo"
+                  className="logo"
                 />
               </Link>
             </div>
@@ -29,26 +62,15 @@ export const StickyNavbar = () => {
               <ul>
                 {menuItems.map((item) => (
                   <li key={item.id} className="menu-item-has-children">
-                    <a href={item.link}>{item.name}</a>
+                    <Link href={item.link}>{item.name}</Link>
                   </li>
                 ))}
               </ul>
             </nav>
-            <div className="logo d-lg-none">
-              <Link href="/">
-                <Image
-                  src="/img/logo.svg"
-                  alt="Carmax"
-                  className="logo"
-                  width={0}
-                  height={0}
-                />
-              </Link>
-            </div>
           </div>
           <div className="col-xl-3 col-md-auto col-auto">
             <div className="header-wc style2">
-              <button className="wc-link2 searchBoxTggler">
+              {/* <button className="wc-link2 searchBoxTggler">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -61,49 +83,13 @@ export const StickyNavbar = () => {
                     fill="#F6F5F5"
                   ></path>
                 </svg>
-              </button>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="6"
-                height="39"
-                viewBox="0 0 6 39"
-                fill="none"
-              >
-                <rect
-                  x="5"
-                  width="1"
-                  height="39"
-                  fill="#D9D9D9"
-                  fillOpacity="0.7"
-                ></rect>
-                <rect
-                  y="9"
-                  width="1"
-                  height="20"
-                  fill="#D9D9D9"
-                  fillOpacity="0.7"
-                ></rect>
-              </svg>
-              <div className="logo d-none d-sm-block">
-                <a href="contact.html" className="vs-btn style10">
-                  <span>let’s plan</span>
-                </a>
-              </div>
-              <div className="logo d-sm-none">
-                <Link href="/">
-                  <Image
-                    src="/img/logo.svg"
-                    alt="Carmax"
-                    className="logo"
-                    width={0}
-                    height={0}
-                  />
-                </Link>
-              </div>
+              </button> */}
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
+
+export default StickyNavbar;

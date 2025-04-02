@@ -7,7 +7,8 @@ import { Footer } from "@/components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ScrollToTop } from "@/components/ScrollButton";
 import { appleIcon } from "@/model";
-import { StickyNavbar } from "@/components/StickyNavbar";
+import Navbar from "@/components/StickyNavbar";
+import { titleFont, bodyFont, bricolageFont, poppinsFont } from "./fonts";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,7 +22,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Tripix - Tours & Travels HTML5 Template | Vecuro | Home 1",
-  description: "Tripix - Tours & Travels HTML5 Template, a stunning and feature-rich solution for travel agencies and tour operators.",
+  description:
+    "Tripix - Tours & Travels HTML5 Template, a stunning and feature-rich solution for travel agencies and tour operators.",
 };
 
 export default function RootLayout({
@@ -29,9 +31,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`
+      ${titleFont.variable}
+      ${bodyFont.variable}
+      ${bricolageFont.variable}
+      ${poppinsFont.variable}
+    `}
+    >
       <head>
         <meta
           name="keywords"
@@ -63,8 +72,8 @@ export default function RootLayout({
         <meta name="theme-color" content="#fff" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Navbar />
         <main className="main">
-          {/* <StickyNavbar /> */}
           <Header />
           {children}
           <Footer />

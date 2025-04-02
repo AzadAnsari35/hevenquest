@@ -15,31 +15,31 @@ import { AiOutlineYoutube } from "react-icons/ai";
 
 // TopNav SocialLinks data
 export const socialLinks: SocialLink[] = [
-  {
-    id: 1,
-    link: "https://x.com/",
-    icon: FaXTwitter,
-  },
+  // {
+  //   id: 1,
+  //   link: "https://x.com/",
+  //   icon: FaXTwitter,
+  // },
   {
     id: 2,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/profile.php?id=61574066897383",
     icon: TiSocialFacebook,
   },
   {
     id: 3,
-    link: "https://www.linkedin.com/",
-    icon: FaLinkedinIn,
+    link: "https://www.instagram.com/hevenquest/?hl=en",
+    icon: FaInstagram,
   },
 ];
 
 // TopNav Menu data
 export const menuItems: MenuItem[] = [
   { id: 1, link: "/", name: "Home" },
-  { id: 2, link: "destinations.html", name: "Destinations" },
-  { id: 3, link: "about.html", name: "About" },
-  { id: 4, link: "package.html", name: "Packages" },
-  { id: 5, link: "faq.html", name: "Faq’s" },
-  { id: 6, link: "contact.html", name: "Contact" },
+  { id: 2, link: "destinations", name: "Destinations" },
+  { id: 3, link: "about", name: "About" },
+  { id: 4, link: "package", name: "Packages" },
+  { id: 5, link: "faq", name: "Faq’s" },
+  { id: 6, link: "contact", name: "Contact" },
 ];
 
 // Destinations data
@@ -139,58 +139,58 @@ export const testimonials: Testimonials[] = [
 export const footerSocialLinks: SocialLink[] = [
   {
     id: 1,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/profile.php?id=61574066897383",
     icon: TiSocialFacebook,
   },
-  {
-    id: 2,
-    link: "https://x.com/",
-    icon: FaXTwitter,
-  },
+  // {
+  //   id: 2,
+  //   link: "https://x.com/",
+  //   icon: FaXTwitter,
+  // },
   {
     id: 3,
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/hevenquest/?hl=en",
     icon: FaInstagram,
   },
-  {
-    id: 4,
-    link: "https://www.youtube.com/",
-    icon: AiOutlineYoutube,
-  },
+  // {
+  //   id: 4,
+  //   link: "https://www.youtube.com/",
+  //   icon: AiOutlineYoutube,
+  // },
 ];
 
 export const usefulLinks:UsefulLinks = [
   [
     {
       id: 1,
-      link: "about.html",
+      link: "about",
       name: "About Us",
     },
     {
       id: 2,
-      link: "terms.html",
+      link: "terms",
       name: "Terms of service",
     },
     {
       id: 3,
-      link: "faq.html",
+      link: "faq",
       name: "FAQ's",
     },
   ],
   [
     {
       id: 4,
-      link: "destinations.html",
+      link: "destinations",
       name: "Explore",
     },
     {
       id: 5,
-      link: "package.html",
+      link: "package",
       name: "Services",
     },
     {
       id: 6,
-      link: "privacy.html",
+      link: "privacy",
       name: "Privacy Policy",
     },
   ],
