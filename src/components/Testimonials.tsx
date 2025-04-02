@@ -1,6 +1,6 @@
 "use client";
 import { testimonials } from "@/model";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { IoMdStar } from "react-icons/io";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -13,15 +13,20 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import ScrollAnimate from "./ScrollAnimate";
 
+type ActiveType = "prev" | "next";
+
 export const Testimonials: React.FC = () => {
   const swiperRef = useRef(null);
+  const [activeBtn, setActiveBtn] = useState<ActiveType>("prev");
 
   const handlePrev = () => {
     swiperRef.current?.slidePrev(); // Go to previous slide
+    if (activeBtn !== "prev") setActiveBtn("prev");
   };
 
   const handleNext = () => {
     swiperRef.current?.slideNext(); // Go to next slide
+    if (activeBtn !== "next") setActiveBtn("next");
   };
 
   return (
@@ -30,7 +35,7 @@ export const Testimonials: React.FC = () => {
         <div className="row justify-content-between align-items-center">
           <div className="col-md-6 col-lg-6 col-xxl-5">
             <div className="title-area text-center text-md-start">
-              <ScrollAnimate direction="down">
+              <ScrollAnimate direction="down" delay={0.5}>
                 <span
                   className="sec-subtitle fade-anim"
                   data-direction="bottom"
@@ -38,7 +43,7 @@ export const Testimonials: React.FC = () => {
                   Our Testimonials
                 </span>
               </ScrollAnimate>
-              <ScrollAnimate direction="up">
+              <ScrollAnimate direction="up" delay={0.5}>
                 <h2 className="sec-title fade-anim" data-direction="top">
                   What Customers Say
                 </h2>
@@ -48,7 +53,9 @@ export const Testimonials: React.FC = () => {
           <div className="col-md-6 col-lg-6 col-xxl-5">
             <div className="swiper-arrow2 tour-packages-navigation justify-content-center justify-content-md-end">
               <button
-                className="testimonial-packages-prev btn-right"
+                className={`testimonial-packages-prev btn-right ${
+                  activeBtn === "prev" && "active"
+                }`}
                 onClick={handlePrev}
               >
                 <svg
@@ -69,7 +76,9 @@ export const Testimonials: React.FC = () => {
                 </svg>
               </button>
               <button
-                className="testimonial-packages-next"
+                className={`testimonial-packages-next ${
+                  activeBtn === "next" && "active"
+                }`}
                 onClick={handleNext}
               >
                 <svg
@@ -95,7 +104,7 @@ export const Testimonials: React.FC = () => {
             className="col-12 mt-30 mt-md-0 fade-anim"
             data-direction="right"
           >
-            <ScrollAnimate direction="right">
+            <ScrollAnimate direction="right" delay={0.5}>
               <div className="swiper testimonial-package-slider">
                 <div className="swiper-wrapper">
                   <Swiper

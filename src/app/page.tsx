@@ -7,10 +7,11 @@ import { CTAAreaSection } from "@/components/CTAAreaSection";
 import { CounterSection } from "@/components/CounterSection";
 import { Testimonials } from "@/components/Testimonials";
 import HeroSlider from "@/components/HeroSlider";
+import { Loader } from "@/components/Loader";
 
 export default function Home() {
   return (
-    <div>
+    <Loader>
       <HeroSlider />
       <AboutSection />
       <TopDestinationSection />
@@ -20,6 +21,6 @@ export default function Home() {
       <CTAAreaSection />
       <CounterSection />
       <Testimonials />
-    </div>
+    </Loader>
   );
 }

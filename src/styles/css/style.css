@@ -2615,6 +2615,7 @@ textarea.is-invalid {
 .main {
   perspective: 1px;
   min-width: 100vw;
+  min-height: 100vh;
   overflow-x: hidden;
   backface-visibility: hidden;
   transform-style: preserve-3d;

@@ -21,7 +21,7 @@ const ScrollAnimate = ({ children, direction = 'up', delay = 0, bounce, styles }
       transition: {
         type: 'spring',
         bounce,
-        duration: 0.6,
+        duration: 2,
         delay,
         ease: 'easeOut',
       },

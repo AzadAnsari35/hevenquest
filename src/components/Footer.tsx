@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
         <div className="container">
           <div className="row gx-4">
             <div className="col-12">
-              <ScrollAnimate direction="up">
+              <ScrollAnimate direction="up" delay={0.5}>
                 <div
                   className="footer-cta bg-third-theme-color fade-anim"
                   style={{
