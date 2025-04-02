@@ -29,7 +29,7 @@ export const AboutSection: React.FC = () => {
               >
                 ABOUT US
               </span>
-              <ScrollAnimate>
+              <ScrollAnimate delay={0.5}>
                 <h2 className="sec-title fade-anim" data-direction="bottom">
                   Unforgettable Journeys
                   <br />
@@ -58,7 +58,7 @@ export const AboutSection: React.FC = () => {
                 </p>
                 <div className="services-lists">
                   <ul className="custom-ul">
-                    <ScrollAnimate>
+                    <ScrollAnimate direction="up" delay={0.5}>
                       <li className="fade-anim" data-delay="0.30">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -74,6 +74,8 @@ export const AboutSection: React.FC = () => {
                         </svg>
                         Customized itineraries designed just for you.
                       </li>
+                      </ScrollAnimate>
+                      <ScrollAnimate direction="up" delay={1}>
                       <li className="fade-anim" data-delay="0.40">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -89,6 +91,8 @@ export const AboutSection: React.FC = () => {
                         </svg>
                         Exclusive experiences that go beyond traditional travel.
                       </li>
+                      </ScrollAnimate>
+                      <ScrollAnimate direction="up" delay={1.5}>
                       <li className="fade-anim" data-delay="0.60">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +118,7 @@ export const AboutSection: React.FC = () => {
             </div>
           </div>
           <div className="col-md-6 order-0 order-md-1">
-          <ScrollAnimate direction="left">
+          <ScrollAnimate direction="left" delay={0.5}>
             <div
               className="about-thumb fade-anim"
               data-direction="right"

@@ -30,20 +30,20 @@ export const CTAAreaSection: React.FC = () => {
                 className="sec-subtitle text-capitalize fade-anim"
                 data-direction="top"
               >
-                <ScrollAnimate direction="up">Find your tour</ScrollAnimate>
+                <ScrollAnimate direction="down" delay={0.5}>Find your tour</ScrollAnimate>
               </span>
               <h2
                 className="sec-title text-white fade-anim"
                 data-direction="bottom"
               >
-                <ScrollAnimate direction="down">
+                <ScrollAnimate direction="up" delay={0.5}>
                   Have a dream destination in mind?
                   <br className="d-none d-md-block" />
                   Let Us Take You There!
                 </ScrollAnimate>
               </h2>
               <div className="btn-bounce btn-trigger">
-                <ScrollAnimate direction="down" bounce={0.5}>
+                <ScrollAnimate direction="down" bounce={0.8}>
                   <a href="trips.html" className="vs-btn style8 mt-5">
                     discover more
                   </a>

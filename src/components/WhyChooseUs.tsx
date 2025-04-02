@@ -50,7 +50,7 @@ export const WhyChooseUs: React.FC = () => {
                 travel experiences and explore the world with us.
               </h6>
               <div className="info-area">
-                <ScrollAnimate direction="down" bounce={0.5} styles={{ width: '100%' }}>
+                <ScrollAnimate direction="down" bounce={0.8} styles={{ width: '100%' }}>
                   <div className="review-box bg-third-theme-color text-center btn-bounce btn-trigger">
                     <figure className="d-block">
                       <Image

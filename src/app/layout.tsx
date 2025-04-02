@@ -21,7 +21,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Tripix - Tours & Travels HTML5 Template | Vecuro | Home 1",
-  description: "Tripix - Tours & Travels HTML5 Template, a stunning and feature-rich solution for travel agencies and tour operators.",
+  description:
+    "Tripix - Tours & Travels HTML5 Template, a stunning and feature-rich solution for travel agencies and tour operators.",
 };
 
 export default function RootLayout({
@@ -29,7 +30,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
       <head>

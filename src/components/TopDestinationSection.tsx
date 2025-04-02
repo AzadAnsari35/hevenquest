@@ -29,12 +29,12 @@ export const TopDestinationSection: React.FC = () => {
         <div className="row">
           <div className="col-lg-auto mx-auto">
             <div className="title-area text-center">
-              <ScrollAnimate>
+              <ScrollAnimate direction="down" delay={0.5}>
                 <span className="sec-subtitle fade-anim" data-direction="top">
                   Top Destinations
                 </span>
               </ScrollAnimate>
-              <ScrollAnimate>
+              <ScrollAnimate direction="up" delay={0.5}>
                 <h2 className="sec-title move-anim">
                   Discover Top Destinations
                 </h2>
@@ -77,7 +77,7 @@ export const TopDestinationSection: React.FC = () => {
               ))}
             </div>
             <div className="text-center mt-50 btn-trigger btn-bounce">
-            <ScrollAnimate direction="down" bounce={0.5}>
+            <ScrollAnimate direction="down" bounce={0.8}>
               <Link href="destinations.html" className="vs-btn style4">
                 <span>view more</span>
               </Link>

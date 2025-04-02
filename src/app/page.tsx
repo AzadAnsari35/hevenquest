@@ -6,10 +6,11 @@ import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { CTAAreaSection } from "@/components/CTAAreaSection";
 import { CounterSection } from "@/components/CounterSection";
 import { Testimonials } from "@/components/Testimonials";
+import { Loader } from "@/components/Loader";
 
 export default function Home() {
   return (
-    <div>
+    <Loader>
       <AboutSection />
       <TopDestinationSection />
       <DestinationGallery />
@@ -18,6 +19,6 @@ export default function Home() {
       <CTAAreaSection />
       <CounterSection />
       <Testimonials />
-    </div>
+    </Loader>
   );
 }
