@@ -17,11 +17,11 @@ const PrivacyPolicy = () => {
                 <h4 className="title">Attention</h4>
                 <p>
                   Welcome to the official website of HeavenQuest Inn & Suites
-                  ("the Site"). Please take a moment to carefully review these
-                  Terms of Use before accessing or using this Site. By using the
-                  Site, you agree to adhere to and be bound by these Terms. If
-                  you do not accept these terms, please refrain from using this
-                  Site.
+                  (&quot;the Site&quot;). Please take a moment to carefully
+                  review these Terms of Use before accessing or using this Site.
+                  By using the Site, you agree to adhere to and be bound by
+                  these Terms. If you do not accept these terms, please refrain
+                  from using this Site.
                 </p>
               </div>
 

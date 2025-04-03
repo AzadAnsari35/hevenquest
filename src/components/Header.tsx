@@ -211,10 +211,7 @@ export const Header: React.FC = () => {
                           fillOpacity="0.7"
                         />
                       </svg>
-                      <Link
-                        href="./blog-details.html"
-                        className="vs-btn style8"
-                      >
+                      <Link href="/package" className="vs-btn style8">
                         <span>let’s plan</span>
                       </Link>
                     </>

@@ -66,9 +66,11 @@ const AccordionComponent: React.FC = () => {
             </div>
           </div>
         </div>
+
         <div className="row g-3">
           <div className="col-lg-6">
             <div className="accordion accordion-style1" id="accordionLeft">
+              {/* FAQ Item 1 */}
               <div className="accordion-item">
                 <h6 className="accordion-header">
                   <button
@@ -91,13 +93,11 @@ const AccordionComponent: React.FC = () => {
                     A package plan is ideal if you’re seeking a hassle-free,
                     cost-effective experience. It covers all your travel needs,
                     including accommodations, activities, and additional
-                    services, often bundled with exclusive discounts. Whether
-                    you’re traveling for business or leisure, a package ensures
-                    you enjoy your trip without worrying about the details,
-                    saving you time and effort while offering great value.
+                    services, often bundled with exclusive discounts.
                   </div>
                 </div>
               </div>
+              {/* FAQ Item 2 */}
               <div className="accordion-item">
                 <h6 className="accordion-header">
                   <button
@@ -121,11 +121,11 @@ const AccordionComponent: React.FC = () => {
                     exclusive discounts, access to premium services, and a
                     hassle-free experience. It simplifies your trip by combining
                     essential elements like accommodations and activities,
-                    saving you both time and money while offering added perks
-                    like special upgrades.
+                    saving you both time and money.
                   </div>
                 </div>
               </div>
+              {/* FAQ Item 3 */}
               <div className="accordion-item">
                 <h6 className="accordion-header">
                   <button
@@ -148,16 +148,16 @@ const AccordionComponent: React.FC = () => {
                     Definitely! We recognize that every traveler has distinct
                     preferences. Our packages are flexible, allowing you to
                     personalize your trip with specific destinations,
-                    activities, and services. Just let us know your
-                    requirements, and we’ll create a plan tailored to your
-                    needs.
+                    activities, and services.
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div className="col-lg-6">
             <div className="accordion accordion-style1" id="accordionRight">
+              {/* FAQ Item 4 */}
               <div className="accordion-item">
                 <h6 className="accordion-header">
                   <button
@@ -185,6 +185,7 @@ const AccordionComponent: React.FC = () => {
                   </div>
                 </div>
               </div>
+              {/* FAQ Item 5 */}
               <div className="accordion-item">
                 <h6 className="accordion-header">
                   <button
@@ -206,16 +207,13 @@ const AccordionComponent: React.FC = () => {
                   <div className="accordion-body">
                     We offer a variety of secure payment methods, including
                     PayPal, Stripe, and Square, to make your transactions easy
-                    and secure. If you have a preferred payment method or need
-                    assistance with processing, our team is available to help
-                    guide you through the process.
+                    and secure.
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* <CounterSection /> */}
       </div>
     </section>
   );

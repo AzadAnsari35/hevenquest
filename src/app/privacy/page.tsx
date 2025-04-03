@@ -18,10 +18,10 @@ const PrivacyPolicy = () => {
                 <p>
                   This Privacy Policy governs the use of services provided by
                   HeavenQuest Inn & Suites Pvt Ltd, including its affiliates and
-                  branches (collectively referred to as "HeavenQuest Inn &
-                  Suites"). This document outlines our data handling practices
-                  and is compliant with the Privacy Act. For any questions or
-                  concerns, please reach out to our Privacy team at
+                  branches (collectively referred to as &quot;HeavenQuest Inn &
+                  Suites&quot;). This document outlines our data handling
+                  practices and is compliant with the Privacy Act. For any
+                  questions or concerns, please reach out to our Privacy team at
                   <a href="mailto:info@heavenquestinn.com">
                     info@heavenquestinn.com
                   </a>

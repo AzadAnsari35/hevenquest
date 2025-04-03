@@ -62,9 +62,9 @@ export const Footer: React.FC = () => {
                     </div>
                     <div className="col-lg-4 d-flex justify-content-center justify-content-lg-end btn-trigger btn-bounce">
                       <ScrollAnimate direction="down" delay={1} bounce={0.5}>
-                        <a href="contact.html" className="vs-btn style6">
+                        <Link href="contact" className="vs-btn style6">
                           <span>booking now</span>
-                        </a>
+                        </Link>
                       </ScrollAnimate>
                     </div>
                   </div>
