@@ -1,7 +1,7 @@
-'use client';
-import React, { useState, useEffect, useRef } from 'react';
+"use client";
+import React, { useState, useEffect, useRef } from "react";
 
-const AnimatedCounter = ({ target }) => {
+const AnimatedCounter = ({ target }: { target: number }) => {
   const [count, setCount] = useState(0);
   const counterRef = useRef(null);
   const hasAnimated = useRef(false);
@@ -13,12 +13,14 @@ const AnimatedCounter = ({ target }) => {
         if (entry.isIntersecting && !hasAnimated.current) {
           hasAnimated.current = true; // prevent re-animation
           animateCounter();
-          observer.unobserve(counterRef.current);
+          if (counterRef.current) {
+            observer.unobserve(counterRef.current);
+          }
         }
       },
       {
         root: null,
-        rootMargin: '0px',
+        rootMargin: "0px",
         threshold: 0.5,
       }
     );
