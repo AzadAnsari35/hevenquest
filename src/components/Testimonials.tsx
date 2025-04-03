@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Swiper as SwiperType } from "swiper"; // Import the main Swiper type to access the instance methods
 
 import { Pagination } from "swiper/modules";
 import ScrollAnimate from "./ScrollAnimate";
@@ -16,7 +17,7 @@ import ScrollAnimate from "./ScrollAnimate";
 type ActiveType = "prev" | "next";
 
 export const Testimonials: React.FC = () => {
-  const swiperRef = useRef(null);
+  const swiperRef = useRef<SwiperType | null>(null);
   const [activeBtn, setActiveBtn] = useState<ActiveType>("prev");
 
   const handlePrev = () => {
