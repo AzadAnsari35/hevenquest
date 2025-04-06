@@ -29,17 +29,18 @@ const FullscreenModal = ({
   };
 
   useEffect(() => {
-    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    const scrollbarWidth =
+      window.innerWidth - document.documentElement.clientWidth;
     if (isOpen) {
-      document.documentElement.style.overflow = 'hidden';
+      document.documentElement.style.overflow = "hidden";
       document.documentElement.style.paddingRight = `${scrollbarWidth}px`;
     } else {
       document.documentElement.style.overflow = "unset";
-      document.documentElement.style.paddingRight = '0px';
+      document.documentElement.style.paddingRight = "0px";
     }
     return () => {
       document.documentElement.style.overflow = "unset";
-      document.documentElement.style.paddingRight = '0px';
+      document.documentElement.style.paddingRight = "0px";
     };
   }, [isOpen]);
 

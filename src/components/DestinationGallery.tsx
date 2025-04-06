@@ -30,11 +30,11 @@ export const DestinationGallery: React.FC = () => {
               width={600}
               height={300}
             />
-            <div className="icon-box">
+            {/* <div className="icon-box">
               <span className="cursor-pointer eye" onClick={() => setImage(0)}>
                 <FaRegEye className="eye" size={30} color="white" />
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="col-lg-6">
@@ -45,16 +45,23 @@ export const DestinationGallery: React.FC = () => {
                   <Image
                     src={item.img || ""}
                     alt="destination-gallery"
-                    className="w-100 h-100"
-                    style={{ height: "300px !important", objectFit: "cover" }}
+                    className="w-100"
+                    style={{
+                      height: "300px",
+                      width: "auto",
+                      objectFit: "cover",
+                    }}
                     width={600}
                     height={300}
                   />
-                  <div className="icon-box">
-                    <span className="cursor-pointer" onClick={() => setImage(index+1)}>
+                  {/* <div className="icon-box">
+                    <span
+                      className="cursor-pointer"
+                      onClick={() => setImage(index + 1)}
+                    >
                       <FaRegEye className="eye" size={30} color="white" />
                     </span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}

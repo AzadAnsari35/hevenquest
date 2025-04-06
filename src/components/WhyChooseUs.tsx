@@ -3,6 +3,8 @@ import Link from "next/link";
 import React from "react";
 import { IoMdStar } from "react-icons/io";
 import ScrollAnimate from "./ScrollAnimate";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
+import { GrUserExpert } from "react-icons/gr";
 
 export const WhyChooseUs: React.FC = () => {
   return (
@@ -50,7 +52,7 @@ export const WhyChooseUs: React.FC = () => {
                 travel experiences and explore the world with us.
               </h6>
               <div className="info-area">
-                <ScrollAnimate direction="down" bounce={0.8} styles={{ width: '100%' }}>
+                {/* <ScrollAnimate direction="down" bounce={0.8} styles={{ width: '100%' }}>
                   <div className="review-box bg-third-theme-color text-center btn-bounce btn-trigger">
                     <figure className="d-block">
                       <Image
@@ -79,17 +81,12 @@ export const WhyChooseUs: React.FC = () => {
                       write a review
                     </Link>
                   </div>
-                </ScrollAnimate>
+                </ScrollAnimate> */}
 
                 <div className="info-list">
                   <div className="info-item">
                     <div className="info-icon">
-                      <Image
-                        src="/img/icons/choos-us-icon-1.png"
-                        alt="choos-us-icon"
-                        width={600}
-                        height={300}
-                      />
+                      <VscWorkspaceTrusted fontSize={60} color="1d67ae" />
                     </div>
                     <div className="info-content">
                       <h5 className="info-title">
@@ -103,12 +100,7 @@ export const WhyChooseUs: React.FC = () => {
                   </div>
                   <div className="info-item">
                     <div className="info-icon">
-                      <Image
-                        src="/img/icons/choos-us-icon-2.png"
-                        alt="choos-us-icon"
-                        width={600}
-                        height={300}
-                      />
+                      <GrUserExpert fontSize={60} color="1d67ae" />
                     </div>
                     <div className="info-content">
                       <h5 className="info-title">Expert Local Guides</h5>

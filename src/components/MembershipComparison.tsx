@@ -28,21 +28,21 @@ const MembershipComparison: React.FC = () => {
                   className="text-center"
                   style={{ width: "25%" }}
                 >
-                  Standard
+                  Blue
                 </th>
                 <th
                   scope="col"
                   className="text-center bg-premium"
                   style={{ width: "25%" }}
                 >
-                  Premium
+                  Red
                 </th>
                 <th
                   scope="col"
                   className="text-center"
                   style={{ width: "25%" }}
                 >
-                  Elite
+                  Purple
                 </th>
               </tr>
             </thead>

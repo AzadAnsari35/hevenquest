@@ -80,8 +80,8 @@ const Packages: React.FC = () => {
         </div>
         <div className="row">
           <PackageCard
-            title="Standard"
-            price="₹6.75"
+            title="Blue"
+            price="₹4.75"
             period="Lakhs"
             charges="₹16,000"
             features={[
@@ -93,8 +93,8 @@ const Packages: React.FC = () => {
             buttonLink="contact.html"
           />
           <PackageCard
-            title="Premium"
-            price="₹7.11"
+            title="Red"
+            price="₹6.95"
             period="Lakhs"
             charges="₹18,000"
             features={[
@@ -107,8 +107,8 @@ const Packages: React.FC = () => {
             isPremium={true}
           />
           <PackageCard
-            title="Elite"
-            price="₹10.02"
+            title="Purple"
+            price="₹9.55"
             period="Lakhs"
             charges="₹20,000"
             features={[

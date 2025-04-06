@@ -31,7 +31,7 @@ export const Header: React.FC = () => {
                         <div className="contact-info">
                           <ul className="custom-ul">
                             <li>
-                              <FaPhoneVolume color="#f7921f" />
+                              <FaPhoneVolume color="#1d67ae" />
                               <Link href="#">01141543739, 9717863939</Link>
                             </li>
                             <li>
@@ -62,7 +62,7 @@ export const Header: React.FC = () => {
                               </svg>
                             </li>
                             <li>
-                              <IoMailSharp color="#f7921f" />
+                              <IoMailSharp color="#1d67ae" />
                               <Link href="mailto:info@hevenquest.com">
                                 info@hevenquest.com
                               </Link>

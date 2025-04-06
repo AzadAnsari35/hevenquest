@@ -148,11 +148,11 @@ export const Testimonials: React.FC = () => {
                                         <g id="right_x5F_quote">
                                           <g>
                                             <path
-                                              style={{ fill: "#f7921f" }}
+                                              style={{ fill: "#1d67ae" }}
                                               d="M0,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H0z"
                                             ></path>
                                             <path
-                                              style={{ fill: "#f7921f" }}
+                                              style={{ fill: "#1d67ae" }}
                                               d="M20,4v12h8c0,4.41-3.586,8-8,8v4c6.617,0,12-5.383,12-12V4H20z"
                                             ></path>
                                           </g>
@@ -161,7 +161,10 @@ export const Testimonials: React.FC = () => {
                                     </g>
                                   </svg>
                                 </h4>
-                                <div className="template-demo">
+                                <div
+                                  className="template-demo"
+                                  style={{ fontStyle: "italic" }}
+                                >
                                   <p>{item.description}</p>
                                 </div>
                                 <hr />
@@ -177,7 +180,7 @@ export const Testimonials: React.FC = () => {
                                           <span key={i}>
                                             <IoMdStar
                                               size={20}
-                                              color="#f7921f"
+                                              color="#1d67ae"
                                             />
                                           </span>
                                         ))}

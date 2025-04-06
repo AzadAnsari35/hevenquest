@@ -1,5 +1,14 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - HeavenQuest Inn & Suites",
+  description:
+    "Read HeavenQuest Inn & Suites' Privacy Policy to understand how we collect, use, and protect your personal information. We value your privacy and ensure your data is handled responsibly.",
+  keywords:
+    "privacy policy, data protection, personal information privacy, HeavenQuest Inn & Suites privacy, hotel privacy policy, customer data protection, privacy rights, website data policy",
+};
 
 const PrivacyPolicy = () => {
   return (

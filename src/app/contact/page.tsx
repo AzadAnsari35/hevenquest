@@ -1,4 +1,3 @@
-"use client";
 import Breadcrumb from "@/components/Breadcrumb";
 import React from "react";
 import {
@@ -10,6 +9,15 @@ import {
   FaVimeoV,
   FaFacebook,
 } from "react-icons/fa";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact HeavenQuest Inn & Suites - Get in Touch with Us",
+  description:
+    "Have questions or need assistance? Contact HeavenQuest Inn & Suites for inquiries, bookings, or any assistance regarding our services. We are here to help!",
+  keywords:
+    "contact HeavenQuest Inn & Suites, customer service, hotel contact, booking inquiries, get in touch, luxury hotel contact, customer support, hotel inquiries, contact us India",
+};
 
 const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {

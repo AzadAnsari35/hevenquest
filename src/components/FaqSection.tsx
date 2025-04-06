@@ -1,6 +1,7 @@
+"use client";
 import React from "react";
-import { Accordion } from "react-bootstrap";
 import { CounterSection } from "./CounterSection";
+import Accordion from "react-bootstrap/Accordion";
 
 interface AccordionItem {
   id: string;
@@ -49,7 +50,12 @@ const AccordionComponent: React.FC = () => {
   ];
 
   return (
-    <section className="vs-faq space" data-bg-src="./assets/img/bg/404-faq.png">
+    <section
+      className="vs-faq space"
+      style={{
+        backgroundImage: `url(/img/bg/404-faq.png)`,
+      }}
+    >
       <div className="container">
         <div className="row">
           <div className="col-lg-auto mx-auto">
@@ -69,149 +75,74 @@ const AccordionComponent: React.FC = () => {
 
         <div className="row g-3">
           <div className="col-lg-6">
-            <div className="accordion accordion-style1" id="accordionLeft">
+            <Accordion defaultActiveKey="0" flush>
               {/* FAQ Item 1 */}
-              <div className="accordion-item">
-                <h6 className="accordion-header">
-                  <button
-                    className="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOneV1"
-                    aria-expanded="true"
-                    aria-controls="collapseOneV1"
-                  >
-                    Why Should I Choose a Package Plan?
-                  </button>
-                </h6>
-                <div
-                  id="collapseOneV1"
-                  className="accordion-collapse collapse show"
-                  data-bs-parent="#accordionLeft"
-                >
-                  <div className="accordion-body">
-                    A package plan is ideal if you’re seeking a hassle-free,
-                    cost-effective experience. It covers all your travel needs,
-                    including accommodations, activities, and additional
-                    services, often bundled with exclusive discounts.
-                  </div>
-                </div>
-              </div>
+              <Accordion.Item eventKey="0">
+                <Accordion.Header className="acc-header">
+                  Why Should I Choose a Package Plan?
+                </Accordion.Header>
+                <Accordion.Body className="acc-body">
+                  A package plan is ideal if you’re seeking a hassle-free,
+                  cost-effective experience. It covers all your travel needs,
+                  including accommodations, activities, and additional services,
+                  often bundled with exclusive discounts.
+                </Accordion.Body>
+              </Accordion.Item>
               {/* FAQ Item 2 */}
-              <div className="accordion-item">
-                <h6 className="accordion-header">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwoV1"
-                    aria-expanded="false"
-                    aria-controls="collapseTwoV1"
-                  >
-                    How Does a Package Plan Benefit Me?
-                  </button>
-                </h6>
-                <div
-                  id="collapseTwoV1"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#accordionLeft"
-                >
-                  <div className="accordion-body">
-                    Booking a package plan offers numerous advantages, including
-                    exclusive discounts, access to premium services, and a
-                    hassle-free experience. It simplifies your trip by combining
-                    essential elements like accommodations and activities,
-                    saving you both time and money.
-                  </div>
-                </div>
-              </div>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header className="acc-header">
+                  How Does a Package Plan Benefit Me?
+                </Accordion.Header>
+                <Accordion.Body className="acc-body">
+                  Booking a package plan offers numerous advantages, including
+                  exclusive discounts, access to premium services, and a
+                  hassle-free experience. It simplifies your trip by combining
+                  essential elements like accommodations and activities, saving
+                  you both time and money.
+                </Accordion.Body>
+              </Accordion.Item>
               {/* FAQ Item 3 */}
-              <div className="accordion-item">
-                <h6 className="accordion-header">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThreeV1"
-                    aria-expanded="false"
-                    aria-controls="collapseThreeV1"
-                  >
-                    Can I Customize My Package Plan?
-                  </button>
-                </h6>
-                <div
-                  id="collapseThreeV1"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#accordionLeft"
-                >
-                  <div className="accordion-body">
-                    Definitely! We recognize that every traveler has distinct
-                    preferences. Our packages are flexible, allowing you to
-                    personalize your trip with specific destinations,
-                    activities, and services.
-                  </div>
-                </div>
-              </div>
-            </div>
+              <Accordion.Item eventKey="2">
+                <Accordion.Header className="acc-header">
+                  Can I Customize My Package Plan?
+                </Accordion.Header>
+                <Accordion.Body className="acc-body">
+                  Definitely! We recognize that every traveler has distinct
+                  preferences. Our packages are flexible, allowing you to
+                  personalize your trip with specific destinations, activities,
+                  and services.
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
           </div>
 
           <div className="col-lg-6">
-            <div className="accordion accordion-style1" id="accordionRight">
+            <Accordion defaultActiveKey="0" flush>
               {/* FAQ Item 4 */}
-              <div className="accordion-item">
-                <h6 className="accordion-header">
-                  <button
-                    className="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOneV2"
-                    aria-expanded="true"
-                    aria-controls="collapseOneV2"
-                  >
-                    How Do I Get Support If I Face Issues During My Trip?
-                  </button>
-                </h6>
-                <div
-                  id="collapseOneV2"
-                  className="accordion-collapse collapse show"
-                  data-bs-parent="#accordionRight"
-                >
-                  <div className="accordion-body">
-                    Our customer support is available around the clock, ready to
-                    assist you whenever needed. Whether you need help with
-                    adjustments to your booking, emergency support, or guidance
-                    during your travels, we’re just a message or call away to
-                    ensure your peace of mind.
-                  </div>
-                </div>
-              </div>
+              <Accordion.Item eventKey="0">
+                <Accordion.Header className="acc-header">
+                  How Do I Get Support If I Face Issues During My Trip?
+                </Accordion.Header>
+                <Accordion.Body className="acc-body">
+                  Our customer support is available around the clock, ready to
+                  assist you whenever needed. Whether you need help with
+                  adjustments to your booking, emergency support, or guidance
+                  during your travels, we’re just a message or call away to
+                  ensure your peace of mind.
+                </Accordion.Body>
+              </Accordion.Item>
               {/* FAQ Item 5 */}
-              <div className="accordion-item">
-                <h6 className="accordion-header">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwoV2"
-                    aria-expanded="false"
-                    aria-controls="collapseTwoV2"
-                  >
-                    Which Payment Methods Do You Accept?
-                  </button>
-                </h6>
-                <div
-                  id="collapseTwoV2"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#accordionRight"
-                >
-                  <div className="accordion-body">
-                    We offer a variety of secure payment methods, including
-                    PayPal, Stripe, and Square, to make your transactions easy
-                    and secure.
-                  </div>
-                </div>
-              </div>
-            </div>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header className="acc-header">
+                  Which Payment Methods Do You Accept?
+                </Accordion.Header>
+                <Accordion.Body className="acc-body">
+                  We offer a variety of secure payment methods, including
+                  PayPal, Stripe, and Square, to make your transactions easy and
+                  secure.
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
           </div>
         </div>
       </div>

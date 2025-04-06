@@ -2,7 +2,8 @@ import {
     Abril_Fatface,
     Rubik,
     Bricolage_Grotesque,
-    Poppins 
+    Poppins,
+    Libre_Baskerville,
   } from 'next/font/google';
   
   // Define your fonts with proper typing
@@ -31,3 +32,12 @@ import {
     variable: '--poppins-font',
     display: 'swap',
   });
+
+
+  export const libreBaskervilleFont = Libre_Baskerville({
+    weight: ['400', '700'], 
+    subsets: ['latin'],
+    variable: '--libre-baskerville-font',
+    display: 'swap',
+  });
+

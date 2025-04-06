@@ -20,12 +20,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Tripix - Tours & Travels HTML5 Template | Vecuro | Home 1",
-  description:
-    "Tripix - Tours & Travels HTML5 Template, a stunning and feature-rich solution for travel agencies and tour operators.",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -43,16 +37,9 @@ export default function RootLayout({
     >
       <head>
         <meta
-          name="keywords"
-          content="Tripix, Tours and Travels, HTML5 Template, Vecuro, Travel Agency Template, Tour Operator Template "
-        />
-        <meta name="robots" content="INDEX,FOLLOW" />
-        {/* <!-- Mobile Specific Metas --> */}
-        <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        {/* <!-- Favicons - Place favicon.ico in the root directory --> */}
         {appleIcon.map((icon) => (
           <link
             key={icon.id}

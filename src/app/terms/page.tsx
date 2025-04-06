@@ -1,5 +1,14 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import React from "react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service - HeavenQuest Inn & Suites",
+  description:
+    "Review the Terms of Service for HeavenQuest Inn & Suites. Our terms outline your rights and responsibilities when using our website and booking services.",
+  keywords:
+    "terms of service, HeavenQuest Inn & Suites terms, website terms, booking terms, hotel terms, service agreement, terms and conditions, user agreement, hotel booking terms",
+};
 
 const PrivacyPolicy = () => {
   return (

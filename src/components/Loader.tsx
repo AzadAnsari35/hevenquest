@@ -10,7 +10,7 @@ export const Loader: React.FC<PageLoaderProps> = ({ children }) => {
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
-    }, 2000);
+    }, 1000);
   }, []);
   return loading ? (
     <div className="preloader">
