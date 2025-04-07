@@ -19,7 +19,7 @@ export const CounterSection: React.FC = () => {
                   src="/img/counter/counter-style1-thumb.jpg"
                   alt="counter-style1"
                   className="w-100"
-                  width={20}
+                  width={220}
                   height={50}
                 />
               </div>
