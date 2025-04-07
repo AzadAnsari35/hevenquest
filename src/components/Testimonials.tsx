@@ -111,12 +111,18 @@ export const Testimonials: React.FC = () => {
                   <Swiper
                     modules={[Pagination]}
                     spaceBetween={30}
-                    slidesPerView={3}
+                    slidesPerView={1}
                     pagination={{ clickable: true }}
                     className="custom-swiper"
                     speed={1000}
                     loop
                     onSwiper={(swiper) => (swiperRef.current = swiper)}
+                    breakpoints={{
+                      768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                      },
+                    }}
                   >
                     {testimonials.map((item, index) => (
                       <SwiperSlide key={index}>

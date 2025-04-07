@@ -8,6 +8,7 @@ import { SocialLink } from "@/interface";
 import { menuItems, socialLinks } from "@/model";
 import { PopupSearch } from "./PopupSearch";
 import { usePathname } from "next/navigation";
+import Sidebar from "./Sidebar";
 
 export const Header: React.FC = () => {
   const [showSearch, setShowSearch] = useState(false);
@@ -149,9 +150,7 @@ export const Header: React.FC = () => {
                         ></path>
                       </svg>
                     </button>
-                    <button className="vs-menu-toggle d-inline-block d-lg-none">
-                      <i className="fal fa-bars"></i>
-                    </button>
+                    <Sidebar />
                   </div>
                 </div>
               </div>
@@ -211,6 +210,7 @@ export const Header: React.FC = () => {
                           fillOpacity="0.7"
                         />
                       </svg>
+
                       <Link href="/package" className="vs-btn style8">
                         <span>let’s plan</span>
                       </Link>
