@@ -237,201 +237,210 @@ const MembershipComparison: React.FC = () => {
         <div className="d-md-none">
           <div className="card mb-4">
             <div className="card-header">
-              <h4 className="mb-0">Standard</h4>
+              <h4 className="mb-0">Blue</h4>
             </div>
             <div className="card-body p-0">
               <ul className="mobile-features-list">
-                <li className="category">Room Benefits</li>
                 <li>
-                  Early Check-in{" "}
+                  When the resorts are not packed{" "}
                   <span>
                     <FaCheck className="text-success" />
                   </span>
                 </li>
                 <li>
-                  Late Check-out{" "}
+                  If you love the Monsoon season{" "}
                   <span>
                     <FaCheck className="text-success" />
                   </span>
                 </li>
                 <li>
-                  Room Upgrades{" "}
+                  During the work week{" "}
                   <span>
                     <FaTimes className="text-muted" />
                   </span>
                 </li>
                 <li>
-                  Welcome Amenity{" "}
+                  During Non-Peak Season{" "}
                   <span>
-                    <FaCheck className="text-success" />
+                    <FaTimes className="text-muted" />
                   </span>
                 </li>
 
-                <li className="category">Dining & Recreation</li>
                 <li>
-                  Restaurant Discount <span>10%</span>
-                </li>
-                <li>
-                  Spa Credit{" "}
+                  During School / College Vacations{" "}
                   <span>
                     <FaTimes className="text-muted" />
                   </span>
                 </li>
                 <li>
-                  Fitness Center Access{" "}
+                  On National Holidays{" "}
                   <span>
-                    <FaCheck className="text-success" />
+                    <FaTimes className="text-muted" />
+                  </span>
+                </li>
+                <li>
+                  During Festivals{" "}
+                  <span>
+                    <FaTimes className="text-muted" />
                   </span>
                 </li>
 
-                <li className="category">Transportation & Services</li>
                 <li>
-                  Airport Transfers{" "}
+                  Any time of the year{" "}
                   <span>
                     <FaTimes className="text-muted" />
                   </span>
                 </li>
                 <li>
-                  Concierge Services <span>Standard</span>
-                </li>
-                <li>
-                  Free Parking{" "}
+                  On Special Days i.e. New Year's Eve{" "}
                   <span>
                     <FaTimes className="text-muted" />
                   </span>
                 </li>
+
+                {/* Package Price */}
+                <li className="category">Package Price</li>
+                <li>₹6.75 Lakhs</li>
               </ul>
             </div>
           </div>
 
           <div className="card mb-4 premium-card">
             <div className="card-header">
-              <h4 className="mb-0">Premium</h4>
+              <h4 className="mb-0">Red</h4>
             </div>
             <div className="card-body p-0">
               <ul className="mobile-features-list">
-                <li className="category">Room Benefits</li>
                 <li>
-                  Early Check-in{" "}
+                  When the resorts are not packed{" "}
                   <span>
                     <FaCheck className="text-success" />
                   </span>
                 </li>
                 <li>
-                  Late Check-out{" "}
+                  If you love the Monsoon season{" "}
                   <span>
                     <FaCheck className="text-success" />
                   </span>
                 </li>
                 <li>
-                  Room Upgrades{" "}
-                  <span>
-                    <FaCheck className="text-success" /> (when available)
-                  </span>
-                </li>
-                <li>
-                  Welcome Amenity{" "}
+                  During the work week{" "}
                   <span>
                     <FaCheck className="text-success" />
                   </span>
                 </li>
-
-                <li className="category">Dining & Recreation</li>
                 <li>
-                  Restaurant Discount <span>20%</span>
-                </li>
-                <li>
-                  Spa Credit <span>$50 per stay</span>
-                </li>
-                <li>
-                  Fitness Center Access{" "}
+                  During Non-Peak Season{" "}
                   <span>
                     <FaCheck className="text-success" />
                   </span>
                 </li>
 
-                <li className="category">Transportation & Services</li>
                 <li>
-                  Airport Transfers{" "}
+                  During School / College Vacations{" "}
                   <span>
                     <FaTimes className="text-muted" />
                   </span>
                 </li>
                 <li>
-                  Concierge Services <span>Priority</span>
-                </li>
-                <li>
-                  Free Parking{" "}
+                  On National Holidays{" "}
                   <span>
-                    <FaCheck className="text-success" />
+                    <FaTimes className="text-muted" />
                   </span>
                 </li>
+                <li>
+                  During Festivals{" "}
+                  <span>
+                    <FaTimes className="text-muted" />
+                  </span>
+                </li>
+
+                <li>
+                  Any time of the year{" "}
+                  <span>
+                    <FaTimes className="text-muted" />
+                  </span>
+                </li>
+                <li>
+                  On Special Days i.e. New Year's Eve{" "}
+                  <span>
+                    <FaTimes className="text-muted" />
+                  </span>
+                </li>
+
+                {/* Package Price */}
+                <li className="category">Package Price</li>
+                <li>₹7.11 Lakhs</li>
               </ul>
             </div>
           </div>
 
           <div className="card mb-4">
             <div className="card-header">
-              <h4 className="mb-0">Elite</h4>
+              <h4 className="mb-0">Purple</h4>
             </div>
             <div className="card-body p-0">
               <ul className="mobile-features-list">
-                <li className="category">Room Benefits</li>
                 <li>
-                  Early Check-in{" "}
+                  When the resorts are not packed{" "}
                   <span>
                     <FaCheck className="text-success" />
                   </span>
                 </li>
                 <li>
-                  Late Check-out{" "}
+                  If you love the Monsoon season{" "}
                   <span>
                     <FaCheck className="text-success" />
                   </span>
                 </li>
                 <li>
-                  Room Upgrades{" "}
-                  <span>
-                    <FaCheck className="text-success" /> (guaranteed)
-                  </span>
-                </li>
-                <li>
-                  Welcome Amenity{" "}
+                  During the work week{" "}
                   <span>
                     <FaCheck className="text-success" />
                   </span>
                 </li>
-
-                <li className="category">Dining & Recreation</li>
                 <li>
-                  Restaurant Discount <span>30%</span>
-                </li>
-                <li>
-                  Spa Credit <span>$100 per stay</span>
-                </li>
-                <li>
-                  Fitness Center Access{" "}
+                  During Non-Peak Season{" "}
                   <span>
                     <FaCheck className="text-success" />
                   </span>
                 </li>
 
-                <li className="category">Transportation & Services</li>
                 <li>
-                  Airport Transfers{" "}
+                  During School / College Vacations{" "}
                   <span>
-                    <FaCheck className="text-success" />
+                    <FaTimes className="text-muted" />
                   </span>
                 </li>
                 <li>
-                  Concierge Services <span>Dedicated</span>
-                </li>
-                <li>
-                  Free Parking{" "}
+                  On National Holidays{" "}
                   <span>
-                    <FaCheck className="text-success" />
+                    <FaTimes className="text-muted" />
                   </span>
                 </li>
+                <li>
+                  During Festivals{" "}
+                  <span>
+                    <FaTimes className="text-muted" />
+                  </span>
+                </li>
+
+                <li>
+                  Any time of the year{" "}
+                  <span>
+                    <FaTimes className="text-muted" />
+                  </span>
+                </li>
+                <li>
+                  On Special Days i.e. New Year's Eve{" "}
+                  <span>
+                    <FaTimes className="text-muted" />
+                  </span>
+                </li>
+
+                {/* Package Price */}
+                <li className="category">Package Price</li>
+                <li>₹10.02 Lakhs</li>
               </ul>
             </div>
           </div>
