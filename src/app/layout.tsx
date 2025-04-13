@@ -60,14 +60,14 @@ export default function RootLayout({
         <meta name="theme-color" content="#fff" />
         <Script
           strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=DMPL004WLM`}
+          src={`https://www.googletagmanager.com/gtag/js?id=G-DMPL004WLM`}
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'DMPL004WLM');
+            gtag('config', 'G-DMPL004WLM');
           `}
         </Script>
       </head>
