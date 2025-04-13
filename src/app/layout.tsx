@@ -9,6 +9,7 @@ import { ScrollToTop } from "@/components/ScrollButton";
 import { appleIcon } from "@/model";
 import Navbar from "@/components/StickyNavbar";
 import { titleFont, bodyFont, bricolageFont, poppinsFont } from "./fonts";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,6 +58,18 @@ export default function RootLayout({
           content="/img/favicons/ms-icon-144x144.png"
         />
         <meta name="theme-color" content="#fff" />
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=DMPL004WLM`}
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'DMPL004WLM');
+          `}
+        </Script>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Navbar />

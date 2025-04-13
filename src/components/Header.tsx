@@ -33,7 +33,21 @@ export const Header: React.FC = () => {
                           <ul className="custom-ul">
                             <li>
                               <FaPhoneVolume color="#1d67ae" />
-                              <Link href="#">01141543739, 9717863939</Link>
+                              <p>
+                                <a
+                                  href="tel:01141543739"
+                                  className="hover:underline text-blue-600"
+                                >
+                                  01141543739
+                                </a>
+                                ,{" "}
+                                <a
+                                  href="tel:9717863939"
+                                  className="hover:underline text-blue-600"
+                                >
+                                  9717863939
+                                </a>
+                              </p>{" "}
                             </li>
                             <li>
                               <svg

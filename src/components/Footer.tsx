@@ -54,7 +54,22 @@ export const Footer: React.FC = () => {
                               <a href="mailto:info@hevenquest.com">
                                 info@hevenquest.com
                               </a>
-                              <a href="#">01141543739, 9717863939</a>
+                              <p style={{ display: "flex" }}>
+                                <a
+                                  href="tel:01141543739"
+                                  className="hover:underline text-blue-600"
+                                >
+                                  01141543739
+                                </a>
+                                ,{" "}
+                                <a
+                                  href="tel:9717863939"
+                                  className="hover:underline text-blue-600"
+                                  style={{ paddingLeft: 4 }}
+                                >
+                                  9717863939
+                                </a>
+                              </p>
                             </p>
                           </div>
                         </div>

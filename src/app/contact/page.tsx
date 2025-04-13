@@ -56,7 +56,21 @@ const ContactSection = () => {
                     </span>
                     <div className="info">
                       <h6 className="info-title fw-bold">Customer Service :</h6>
-                      <p>01141543739, 9717863939</p>
+                      <p>
+                        <a
+                          href="tel:01141543739"
+                          className="hover:underline text-blue-600"
+                        >
+                          01141543739
+                        </a>
+                        ,{" "}
+                        <a
+                          href="tel:9717863939"
+                          className="hover:underline text-blue-600"
+                        >
+                          9717863939
+                        </a>
+                      </p>
                     </div>
                   </div>
                   <div className="contact-item d-flex mb-3">
