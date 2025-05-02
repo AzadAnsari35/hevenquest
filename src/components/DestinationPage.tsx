@@ -2122,7 +2122,9 @@ export default function DestinationsPage() {
                 style={{ height: "auto", padding: "8px 12px" }}
               >
                 <option value="all">All Types</option>
-                <option value="hamilton">Hamilton</option>
+                <option value="hamilton">
+                  HevenQuest & Associated Partners
+                </option>
                 <option value="hashtag">Hashtag</option>
               </Form.Select>
             </Col>
