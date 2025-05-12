@@ -2107,7 +2107,10 @@ export default function DestinationsPage() {
                   type="text"
                   placeholder="Search destinations..."
                   value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onChange={(e) => {
+                    setSearchQuery(e.target.value);
+                    setCurrentPage(1);
+                  }}
                   className="ps-5"
                   style={{ height: "auto", padding: "8px 12px 8px 48px" }}
                 />
@@ -2118,7 +2121,10 @@ export default function DestinationsPage() {
             <Col md={4}>
               <Form.Select
                 value={selectedType}
-                onChange={(e) => setSelectedType(e.target.value)}
+                onChange={(e) => {
+                  setSelectedType(e.target.value);
+                  setCurrentPage(1);
+                }}
                 style={{ height: "auto", padding: "8px 12px" }}
               >
                 <option value="all">All Types</option>
@@ -2133,7 +2139,10 @@ export default function DestinationsPage() {
             <Col md={4}>
               <Form.Select
                 value={selectedLocation}
-                onChange={(e) => setSelectedLocation(e.target.value)}
+                onChange={(e) => {
+                  setSelectedLocation(e.target.value);
+                  setCurrentPage(1);
+                }}
                 style={{ height: "auto", padding: "8px 12px" }}
               >
                 <option value="all">All Locations</option>
